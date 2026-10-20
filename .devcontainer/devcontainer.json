@@ -1,0 +1,8 @@
+{
+  "name": "reviewdat",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": "npm run dev -- --host",
+  "forwardPorts": [5173],
+  "portsAttributes": { "5173": { "label": "reviewdat", "onAutoForward": "openBrowser" } }
+}

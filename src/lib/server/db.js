@@ -7,7 +7,8 @@ const DATA_DIR = process.env.DATA_DIR || 'data';
 export const UPLOAD_DIR = path.join(DATA_DIR, 'uploads');
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 
-export const db = new Database(path.join(DATA_DIR, 'reviewdat.db'));
+// Reuse one connection across Vite dev reloads; reopening on every reload leaks native handles.
+export const db = (globalThis.__reviewdatDb ??= new Database(path.join(DATA_DIR, 'reviewdat.db')));
 db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
 
