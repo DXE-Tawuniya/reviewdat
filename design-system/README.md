@@ -60,9 +60,10 @@ reviewdat is built from one idea in its logo: a speech bubble with a check mark.
 
 ## Logo use
 
-- Use `assets/brand/reviewdat-logo.png`. Never redraw, recolor, stretch or retype it.
-- Give it clear space at least the height of the bubble's check mark on every side.
-- On dark backgrounds, use a light version (to be produced; see `assets/brand/README.md`).
+- Use the files in `assets/brand/` (see its README for which one fits each background). Prefer the SVG versions.
+- Light screens: `reviewdat-logo.svg`. Dark mode: `reviewdat-logo-dark-bg.svg`. On brand blue: `reviewdat-logo-white.svg`.
+- Small or square spaces: the mark only (`reviewdat-mark.svg`), at least 16px.
+- Never redraw, recolor, stretch or retype it. Keep clear space of at least the check mark's height on every side.
 
 ## Components
 
