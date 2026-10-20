@@ -1,0 +1,14 @@
+<!-- @dsCard group="Navigation" height=80 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Tabs — preview</title></head>
+<body>
+<div id="root" class="rd-col"></div>
+<script>
+  var R = window.Reviewdat, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(R.Tabs, { items: [{ value: 'all', label: 'All' }, { value: 'pending', label: 'Pending' }, { value: 'done', label: 'Done' }] })
+  ));
+</script>
+</body>
+</html>

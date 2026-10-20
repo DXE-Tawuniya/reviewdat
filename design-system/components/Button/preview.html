@@ -1,0 +1,19 @@
+<!-- @dsCard group="Actions" height=88 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Button — preview</title></head>
+<body>
+<div id="root" class="rd-row"></div>
+<script>
+  var R = window.Reviewdat, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(R.Button, null, 'Submit review'),
+    h(R.Button, { variant: 'secondary' }, 'Save draft'),
+    h(R.Button, { variant: 'ghost' }, 'Skip'),
+    h(R.Button, { variant: 'danger' }, 'Delete'),
+    h(R.Button, { size: 'sm' }, 'Approve'),
+    h(R.Button, { disabled: true }, 'Disabled')
+  ));
+</script>
+</body>
+</html>

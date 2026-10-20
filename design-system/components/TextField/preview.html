@@ -1,0 +1,16 @@
+<!-- @dsCard group="Inputs" height=300 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>TextField — preview</title></head>
+<body>
+<div id="root" class="rd-col"></div>
+<script>
+  var R = window.Reviewdat, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(R.TextField, { label: 'Title', placeholder: 'Give your review a title', helperText: 'Keep it short and clear.' }),
+    h(R.TextField, { label: 'Email', defaultValue: 'nour@', error: 'Enter a valid email address.' }),
+    h(R.TextField, { label: 'Your feedback', multiline: true, placeholder: 'What worked, and what should change?' })
+  ));
+</script>
+</body>
+</html>
